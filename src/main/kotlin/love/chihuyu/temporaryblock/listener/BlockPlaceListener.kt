@@ -25,8 +25,8 @@ object BlockPlaceListener: Listener {
         var counter = 0
         TemporaryBlockPlugin.sync(0, 1) {
             if (counter > 100 &&
-                event.player.world.getNearbyEntities(location, -1.5, 2.0, .5).isEmpty() &&
-                event.player.world.getNearbyEntities(location, .5, 2.0, -1.5).isEmpty()) {
+                event.player.world.getNearbyEntities(location, -1.5, 2.5, .5).isEmpty() &&
+                event.player.world.getNearbyEntities(location, .5, 2.5, -1.5).isEmpty()) {
                 event.blockPlaced.breakNaturally(true)
                 event.player.inventory.addItem(TemporaryBlockRecipe.temporaryBlock.apply { amount = 1 })
                 cancel()
