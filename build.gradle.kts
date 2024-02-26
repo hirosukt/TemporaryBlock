@@ -36,7 +36,7 @@ dependencies {
     compileOnly("dev.jorel:commandapi-bukkit-core:9.3.0")
     compileOnly("dev.jorel:commandapi-bukkit-kotlin:9.3.0")
     compileOnly("de.tr7zw:item-nbt-api-plugin:2.12.2")
-    implementation("net.kyori:adventure-text-minimessage:4.15.0")
+    implementation("net.kyori:adventure-text-minimessage:4.16.0")
     compileOnly(kotlin("stdlib"))
 }
 
